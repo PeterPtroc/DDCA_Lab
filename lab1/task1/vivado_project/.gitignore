@@ -1,0 +1,22 @@
+# ==========================================
+# 4. Vivado Engineering Generated Files
+# ==========================================
+# 忽略庞大的工程缓存及中间生成文件
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.dir/
+
+# 中间产物和日志
+*.dcp
+*.mmi
+*.bmm
+*.bit
+*.bin
+*.pdi
+*.ll
+*.rpx
+*.pb
+*.wdf

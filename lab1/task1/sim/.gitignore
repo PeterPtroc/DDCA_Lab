@@ -1,0 +1,13 @@
+# ==========================================
+# 3. ModelSim / QuestaSim Simulation Files
+# ==========================================
+# 这里的 transcript 只限定在 sim/ 目录下失效
+transcript
+*.wlf
+modelsim.ini
+work/
+*_temp/
+*_tempmsg/
+@_opt/
+*.vcd
+*.awc

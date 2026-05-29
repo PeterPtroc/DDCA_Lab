@@ -1,0 +1,12 @@
+# ==========================================
+# 2. Vivado Logs & Temp Files (Task Level)
+# ==========================================
+# 只忽略由 Vivado 在当前目录生成的临时日志，防止误伤您的文档
+vivado*.jou
+vivado*.log
+vivado*.str
+.Xil/
+*_webtalk.html
+*_webtalk.xml
+webtalk_*.html
+webtalk_*.xml

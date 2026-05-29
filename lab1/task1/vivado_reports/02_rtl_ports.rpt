@@ -1,0 +1,51 @@
+========================================
+RTL Port Report
+========================================
+
+Current design:
+  rtl_1
+
+Ports:
+----------------------------------------
+  A    direction=IN    width=
+  B    direction=IN    width=
+  C    direction=IN    width=
+  G1    direction=IN    width=
+  G2A_n    direction=IN    width=
+  G2B_n    direction=IN    width=
+  Y_n[0]    direction=OUT    width=
+  Y_n[1]    direction=OUT    width=
+  Y_n[2]    direction=OUT    width=
+  Y_n[3]    direction=OUT    width=
+  Y_n[4]    direction=OUT    width=
+  Y_n[5]    direction=OUT    width=
+  Y_n[6]    direction=OUT    width=
+  Y_n[7]    direction=OUT    width=
+
+Nets:
+----------------------------------------
+  <const1>
+  A
+  B
+  C
+  G1
+  G2A_n
+  G2B_n
+  Y_n[0]
+  Y_n[1]
+  Y_n[2]
+  Y_n[3]
+  Y_n[4]
+  Y_n[5]
+  Y_n[6]
+  Y_n[7]
+  Y_n_i_n_0
+  Y_n_i_n_1
+  Y_n_i_n_2
+  Y_n_i_n_3
+  Y_n_i_n_4
+  Y_n_i_n_5
+  Y_n_i_n_6
+  Y_n_i_n_7
+  enable
+  enable0
