@@ -1,0 +1,10 @@
+# ModelSim / QuestaSim generated files.
+transcript
+*.wlf
+modelsim.ini
+work/
+*_temp/
+*_tempmsg/
+@_opt/
+*.vcd
+*.awc

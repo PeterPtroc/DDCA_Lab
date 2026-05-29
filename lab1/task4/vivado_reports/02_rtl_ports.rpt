@@ -1,0 +1,36 @@
+========================================
+RTL Port Report for alu_1bit
+========================================
+
+Current design:
+  rtl_1
+
+Ports:
+----------------------------------------
+  A    direction=IN    width=
+  B    direction=IN    width=
+  Cout    direction=OUT    width=
+  F    direction=OUT    width=
+  S[0]    direction=IN    width=
+  S[1]    direction=IN    width=
+  S[2]    direction=IN    width=
+
+Nets:
+----------------------------------------
+  <const0>
+  A
+  B
+  Cout
+  F
+  F0
+  F0_i__0_n_0
+  F0_i__1_n_0
+  F0_i__2_n_0
+  F0_i__3_n_0
+  F0_i_n_0
+  F1
+  S[0]
+  S[1]
+  S[2]
+  p_0_in
+  p_1_in

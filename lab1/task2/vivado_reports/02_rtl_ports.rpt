@@ -1,0 +1,46 @@
+========================================
+RTL Port Report for encoder_74ls148
+========================================
+
+Current design:
+  rtl_1
+
+Ports:
+----------------------------------------
+  A_n[0]    direction=OUT    width=
+  A_n[1]    direction=OUT    width=
+  A_n[2]    direction=OUT    width=
+  EI_n    direction=IN    width=
+  EO_n    direction=OUT    width=
+  GS_n    direction=OUT    width=
+  I_n[0]    direction=IN    width=
+  I_n[1]    direction=IN    width=
+  I_n[2]    direction=IN    width=
+  I_n[3]    direction=IN    width=
+  I_n[4]    direction=IN    width=
+  I_n[5]    direction=IN    width=
+  I_n[6]    direction=IN    width=
+  I_n[7]    direction=IN    width=
+
+Nets:
+----------------------------------------
+  <const1>
+  A_n[0]
+  A_n[1]
+  A_n[2]
+  A_n_i_n_0
+  A_n_i_n_1
+  A_n_i_n_2
+  EI_n
+  EO_n
+  EO_n_i_n_0
+  GS_n
+  GS_n_i_n_0
+  I_n[0]
+  I_n[1]
+  I_n[2]
+  I_n[3]
+  I_n[4]
+  I_n[5]
+  I_n[6]
+  I_n[7]

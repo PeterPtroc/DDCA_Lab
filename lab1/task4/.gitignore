@@ -1,0 +1,9 @@
+# Vivado logs and temporary files generated in the task root.
+vivado*.jou
+vivado*.log
+vivado*.str
+.Xil/
+*_webtalk.html
+*_webtalk.xml
+webtalk_*.html
+webtalk_*.xml

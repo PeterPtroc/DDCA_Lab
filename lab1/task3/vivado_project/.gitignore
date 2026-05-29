@@ -1,0 +1,18 @@
+# Vivado project cache and heavy generated implementation artifacts.
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.dir/
+*.dcp
+*.mmi
+*.bmm
+*.bit
+*.bin
+*.pdi
+*.ll
+*.rpx
+*.pb
+*.wdf
+*.xpr

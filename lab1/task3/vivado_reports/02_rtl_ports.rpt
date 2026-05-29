@@ -1,0 +1,43 @@
+========================================
+RTL Port Report for adder_4bit
+========================================
+
+Current design:
+  rtl_1
+
+Ports:
+----------------------------------------
+  a[0]    direction=IN    width=
+  a[1]    direction=IN    width=
+  a[2]    direction=IN    width=
+  a[3]    direction=IN    width=
+  b[0]    direction=IN    width=
+  b[1]    direction=IN    width=
+  b[2]    direction=IN    width=
+  b[3]    direction=IN    width=
+  cin    direction=IN    width=
+  cout    direction=OUT    width=
+  sum[0]    direction=OUT    width=
+  sum[1]    direction=OUT    width=
+  sum[2]    direction=OUT    width=
+  sum[3]    direction=OUT    width=
+
+Nets:
+----------------------------------------
+  a[0]
+  a[1]
+  a[2]
+  a[3]
+  b[0]
+  b[1]
+  b[2]
+  b[3]
+  c1
+  c2
+  c3
+  cin
+  cout
+  sum[0]
+  sum[1]
+  sum[2]
+  sum[3]
