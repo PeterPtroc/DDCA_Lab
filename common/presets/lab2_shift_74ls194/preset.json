@@ -1,0 +1,10 @@
+{
+  "lab_dir": "lab2",
+  "task_dir": "task2_shift_74ls194",
+  "title": "任务2：4 位双向移位寄存器 74LS194",
+  "requirement": "用 Verilog HDL 实现 4 位双向移位寄存器 74LS194，并进行仿真测试。",
+  "top_module": "shift_register_74ls194",
+  "sim_top": "tb_shift_register_74ls194",
+  "wave_signals": "\nadd wave -divider \"Clock and Control\"\nadd wave -radix binary /{{SIM_TOP}}/clk\nadd wave -radix binary /{{SIM_TOP}}/clr_n\nadd wave -radix binary /{{SIM_TOP}}/s\nadd wave -divider \"Data\"\nadd wave -radix binary /{{SIM_TOP}}/sr\nadd wave -radix binary /{{SIM_TOP}}/sl\nadd wave -radix hexadecimal /{{SIM_TOP}}/d\nadd wave -radix hexadecimal /{{SIM_TOP}}/q\nadd wave -radix unsigned /{{SIM_TOP}}/error_count\n",
+  "extra_notes": ""
+}

@@ -1,0 +1,253 @@
+========================================
+RTL Port Report for adder_32bit
+========================================
+
+Current design:
+  rtl_1
+
+Ports:
+----------------------------------------
+  CF    direction=OUT    width=
+  OF    direction=OUT    width=
+  SF    direction=OUT    width=
+  ZF    direction=OUT    width=
+  a[0]    direction=IN    width=
+  a[10]    direction=IN    width=
+  a[11]    direction=IN    width=
+  a[12]    direction=IN    width=
+  a[13]    direction=IN    width=
+  a[14]    direction=IN    width=
+  a[15]    direction=IN    width=
+  a[16]    direction=IN    width=
+  a[17]    direction=IN    width=
+  a[18]    direction=IN    width=
+  a[19]    direction=IN    width=
+  a[1]    direction=IN    width=
+  a[20]    direction=IN    width=
+  a[21]    direction=IN    width=
+  a[22]    direction=IN    width=
+  a[23]    direction=IN    width=
+  a[24]    direction=IN    width=
+  a[25]    direction=IN    width=
+  a[26]    direction=IN    width=
+  a[27]    direction=IN    width=
+  a[28]    direction=IN    width=
+  a[29]    direction=IN    width=
+  a[2]    direction=IN    width=
+  a[30]    direction=IN    width=
+  a[31]    direction=IN    width=
+  a[3]    direction=IN    width=
+  a[4]    direction=IN    width=
+  a[5]    direction=IN    width=
+  a[6]    direction=IN    width=
+  a[7]    direction=IN    width=
+  a[8]    direction=IN    width=
+  a[9]    direction=IN    width=
+  b[0]    direction=IN    width=
+  b[10]    direction=IN    width=
+  b[11]    direction=IN    width=
+  b[12]    direction=IN    width=
+  b[13]    direction=IN    width=
+  b[14]    direction=IN    width=
+  b[15]    direction=IN    width=
+  b[16]    direction=IN    width=
+  b[17]    direction=IN    width=
+  b[18]    direction=IN    width=
+  b[19]    direction=IN    width=
+  b[1]    direction=IN    width=
+  b[20]    direction=IN    width=
+  b[21]    direction=IN    width=
+  b[22]    direction=IN    width=
+  b[23]    direction=IN    width=
+  b[24]    direction=IN    width=
+  b[25]    direction=IN    width=
+  b[26]    direction=IN    width=
+  b[27]    direction=IN    width=
+  b[28]    direction=IN    width=
+  b[29]    direction=IN    width=
+  b[2]    direction=IN    width=
+  b[30]    direction=IN    width=
+  b[31]    direction=IN    width=
+  b[3]    direction=IN    width=
+  b[4]    direction=IN    width=
+  b[5]    direction=IN    width=
+  b[6]    direction=IN    width=
+  b[7]    direction=IN    width=
+  b[8]    direction=IN    width=
+  b[9]    direction=IN    width=
+  result[0]    direction=OUT    width=
+  result[10]    direction=OUT    width=
+  result[11]    direction=OUT    width=
+  result[12]    direction=OUT    width=
+  result[13]    direction=OUT    width=
+  result[14]    direction=OUT    width=
+  result[15]    direction=OUT    width=
+  result[16]    direction=OUT    width=
+  result[17]    direction=OUT    width=
+  result[18]    direction=OUT    width=
+  result[19]    direction=OUT    width=
+  result[1]    direction=OUT    width=
+  result[20]    direction=OUT    width=
+  result[21]    direction=OUT    width=
+  result[22]    direction=OUT    width=
+  result[23]    direction=OUT    width=
+  result[24]    direction=OUT    width=
+  result[25]    direction=OUT    width=
+  result[26]    direction=OUT    width=
+  result[27]    direction=OUT    width=
+  result[28]    direction=OUT    width=
+  result[29]    direction=OUT    width=
+  result[2]    direction=OUT    width=
+  result[30]    direction=OUT    width=
+  result[31]    direction=OUT    width=
+  result[3]    direction=OUT    width=
+  result[4]    direction=OUT    width=
+  result[5]    direction=OUT    width=
+  result[6]    direction=OUT    width=
+  result[7]    direction=OUT    width=
+  result[8]    direction=OUT    width=
+  result[9]    direction=OUT    width=
+  sub    direction=IN    width=
+
+Nets:
+----------------------------------------
+  <const0>
+  CF
+  CF0
+  OF
+  OF0
+  OF0_i__0_n_0
+  OF1
+  OF1_i__0_n_0
+  SF
+  ZF
+  a[0]
+  a[10]
+  a[11]
+  a[12]
+  a[13]
+  a[14]
+  a[15]
+  a[16]
+  a[17]
+  a[18]
+  a[19]
+  a[1]
+  a[20]
+  a[21]
+  a[22]
+  a[23]
+  a[24]
+  a[25]
+  a[26]
+  a[27]
+  a[28]
+  a[29]
+  a[2]
+  a[30]
+  a[31]
+  a[3]
+  a[4]
+  a[5]
+  a[6]
+  a[7]
+  a[8]
+  a[9]
+  b[0]
+  b[10]
+  b[11]
+  b[12]
+  b[13]
+  b[14]
+  b[15]
+  b[16]
+  b[17]
+  b[18]
+  b[19]
+  b[1]
+  b[20]
+  b[21]
+  b[22]
+  b[23]
+  b[24]
+  b[25]
+  b[26]
+  b[27]
+  b[28]
+  b[29]
+  b[2]
+  b[30]
+  b[31]
+  b[3]
+  b[4]
+  b[5]
+  b[6]
+  b[7]
+  b[8]
+  b[9]
+  b_eff_i_n_1
+  b_eff_i_n_10
+  b_eff_i_n_11
+  b_eff_i_n_12
+  b_eff_i_n_13
+  b_eff_i_n_14
+  b_eff_i_n_15
+  b_eff_i_n_16
+  b_eff_i_n_17
+  b_eff_i_n_18
+  b_eff_i_n_19
+  b_eff_i_n_2
+  b_eff_i_n_20
+  b_eff_i_n_21
+  b_eff_i_n_22
+  b_eff_i_n_23
+  b_eff_i_n_24
+  b_eff_i_n_25
+  b_eff_i_n_26
+  b_eff_i_n_27
+  b_eff_i_n_28
+  b_eff_i_n_29
+  b_eff_i_n_3
+  b_eff_i_n_30
+  b_eff_i_n_31
+  b_eff_i_n_4
+  b_eff_i_n_5
+  b_eff_i_n_6
+  b_eff_i_n_7
+  b_eff_i_n_8
+  b_eff_i_n_9
+  c16
+  cout
+  p_0_in
+  result[0]
+  result[10]
+  result[11]
+  result[12]
+  result[13]
+  result[14]
+  result[15]
+  result[16]
+  result[17]
+  result[18]
+  result[19]
+  result[1]
+  result[20]
+  result[21]
+  result[22]
+  result[23]
+  result[24]
+  result[25]
+  result[26]
+  result[27]
+  result[28]
+  result[29]
+  result[2]
+  result[30]
+  result[3]
+  result[4]
+  result[5]
+  result[6]
+  result[7]
+  result[8]
+  result[9]
+  sub

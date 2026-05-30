@@ -1,0 +1,10 @@
+{
+  "lab_dir": "lab2",
+  "task_dir": "task1_counter_74ls161",
+  "title": "任务1：同步 4 位二进制计数器 74LS161",
+  "requirement": "用 Verilog HDL 实现同步 4 位二进制计数器 74LS161，并进行仿真测试。",
+  "top_module": "counter_74ls161",
+  "sim_top": "tb_counter_74ls161",
+  "wave_signals": "\nadd wave -divider \"Clock and Control\"\nadd wave -radix binary /{{SIM_TOP}}/clk\nadd wave -radix binary /{{SIM_TOP}}/clr_n\nadd wave -radix binary /{{SIM_TOP}}/load_n\nadd wave -radix binary /{{SIM_TOP}}/enp\nadd wave -radix binary /{{SIM_TOP}}/ent\nadd wave -divider \"Data\"\nadd wave -radix hexadecimal /{{SIM_TOP}}/d\nadd wave -radix hexadecimal /{{SIM_TOP}}/q\nadd wave -radix binary /{{SIM_TOP}}/rco\nadd wave -radix unsigned /{{SIM_TOP}}/error_count\n",
+  "extra_notes": ""
+}

@@ -10,3 +10,26 @@ Thumbs.db
 *.backup.*
 __pycache__/
 *.py[cod]
+
+# ==========================================
+# 2. Tool-generated caches and logs
+# ==========================================
+transcript
+*.wlf
+modelsim.ini
+work/
+vivado*.jou
+vivado*.log
+vivado*.str
+.Xil/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.dir/
+*.xpr
+*_webtalk.html
+*_webtalk.xml
+webtalk_*.html
+webtalk_*.xml

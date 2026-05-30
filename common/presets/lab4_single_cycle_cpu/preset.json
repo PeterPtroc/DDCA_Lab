@@ -1,0 +1,10 @@
+{
+  "lab_dir": "lab4",
+  "task_dir": "task1_single_cycle_cpu",
+  "title": "任务1：单周期 CPU 设计与测试",
+  "requirement": "利用 ALU、寄存器堆、取指令部件、控制器等电路实现支持 add、sub、or、slt、sltu、lw、sw、beq、lui 的单周期 CPU，并用累加和程序和冒泡排序程序验证。",
+  "top_module": "single_cycle_cpu",
+  "sim_top": "tb_single_cycle_cpu",
+  "wave_signals": "\nadd wave -divider \"Clock and PC\"\nadd wave -radix binary /{{SIM_TOP}}/clk\nadd wave -radix binary /{{SIM_TOP}}/reset\nadd wave -radix hexadecimal /{{SIM_TOP}}/debug_pc\nadd wave -radix hexadecimal /{{SIM_TOP}}/debug_instr\nadd wave -divider \"Datapath\"\nadd wave -radix hexadecimal /{{SIM_TOP}}/debug_alu_result\nadd wave -radix binary /{{SIM_TOP}}/debug_mem_write\nadd wave -radix unsigned /{{SIM_TOP}}/error_count\n",
+  "extra_notes": "仿真程序镜像位于 `sim/*.mem`，testbench 会分别加载累加和与冒泡排序程序并检查最终数据存储器内容。"
+}

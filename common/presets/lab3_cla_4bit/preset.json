@@ -1,0 +1,10 @@
+{
+  "lab_dir": "lab3",
+  "task_dir": "task1_cla_4bit",
+  "title": "任务1：4 位先行进位加法器 CLA",
+  "requirement": "用 Verilog HDL 实现并验证 4 位先行进位加法器 CLA。",
+  "top_module": "cla_4bit",
+  "sim_top": "tb_cla_4bit",
+  "wave_signals": "\nadd wave -divider \"Inputs\"\nadd wave -radix hexadecimal /{{SIM_TOP}}/a\nadd wave -radix hexadecimal /{{SIM_TOP}}/b\nadd wave -radix binary /{{SIM_TOP}}/cin\nadd wave -radix binary /{{SIM_TOP}}/sub\nadd wave -radix binary /{{SIM_TOP}}/alu_ctrl\nadd wave -divider \"Outputs\"\nadd wave -radix hexadecimal /{{SIM_TOP}}/sum\nadd wave -radix hexadecimal /{{SIM_TOP}}/result\nadd wave -radix binary /{{SIM_TOP}}/cout\nadd wave -radix binary /{{SIM_TOP}}/CF\nadd wave -radix binary /{{SIM_TOP}}/SF\nadd wave -radix binary /{{SIM_TOP}}/OF\nadd wave -radix binary /{{SIM_TOP}}/ZF\nadd wave -radix unsigned /{{SIM_TOP}}/error_count\n",
+  "extra_notes": ""
+}

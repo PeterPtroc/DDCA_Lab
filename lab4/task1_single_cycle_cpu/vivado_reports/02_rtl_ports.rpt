@@ -1,0 +1,509 @@
+========================================
+RTL Port Report for single_cycle_cpu
+========================================
+
+Current design:
+  rtl_1
+
+Ports:
+----------------------------------------
+  clk    direction=IN    width=
+  debug_alu_result[0]    direction=OUT    width=
+  debug_alu_result[10]    direction=OUT    width=
+  debug_alu_result[11]    direction=OUT    width=
+  debug_alu_result[12]    direction=OUT    width=
+  debug_alu_result[13]    direction=OUT    width=
+  debug_alu_result[14]    direction=OUT    width=
+  debug_alu_result[15]    direction=OUT    width=
+  debug_alu_result[16]    direction=OUT    width=
+  debug_alu_result[17]    direction=OUT    width=
+  debug_alu_result[18]    direction=OUT    width=
+  debug_alu_result[19]    direction=OUT    width=
+  debug_alu_result[1]    direction=OUT    width=
+  debug_alu_result[20]    direction=OUT    width=
+  debug_alu_result[21]    direction=OUT    width=
+  debug_alu_result[22]    direction=OUT    width=
+  debug_alu_result[23]    direction=OUT    width=
+  debug_alu_result[24]    direction=OUT    width=
+  debug_alu_result[25]    direction=OUT    width=
+  debug_alu_result[26]    direction=OUT    width=
+  debug_alu_result[27]    direction=OUT    width=
+  debug_alu_result[28]    direction=OUT    width=
+  debug_alu_result[29]    direction=OUT    width=
+  debug_alu_result[2]    direction=OUT    width=
+  debug_alu_result[30]    direction=OUT    width=
+  debug_alu_result[31]    direction=OUT    width=
+  debug_alu_result[3]    direction=OUT    width=
+  debug_alu_result[4]    direction=OUT    width=
+  debug_alu_result[5]    direction=OUT    width=
+  debug_alu_result[6]    direction=OUT    width=
+  debug_alu_result[7]    direction=OUT    width=
+  debug_alu_result[8]    direction=OUT    width=
+  debug_alu_result[9]    direction=OUT    width=
+  debug_instr[0]    direction=OUT    width=
+  debug_instr[10]    direction=OUT    width=
+  debug_instr[11]    direction=OUT    width=
+  debug_instr[12]    direction=OUT    width=
+  debug_instr[13]    direction=OUT    width=
+  debug_instr[14]    direction=OUT    width=
+  debug_instr[15]    direction=OUT    width=
+  debug_instr[16]    direction=OUT    width=
+  debug_instr[17]    direction=OUT    width=
+  debug_instr[18]    direction=OUT    width=
+  debug_instr[19]    direction=OUT    width=
+  debug_instr[1]    direction=OUT    width=
+  debug_instr[20]    direction=OUT    width=
+  debug_instr[21]    direction=OUT    width=
+  debug_instr[22]    direction=OUT    width=
+  debug_instr[23]    direction=OUT    width=
+  debug_instr[24]    direction=OUT    width=
+  debug_instr[25]    direction=OUT    width=
+  debug_instr[26]    direction=OUT    width=
+  debug_instr[27]    direction=OUT    width=
+  debug_instr[28]    direction=OUT    width=
+  debug_instr[29]    direction=OUT    width=
+  debug_instr[2]    direction=OUT    width=
+  debug_instr[30]    direction=OUT    width=
+  debug_instr[31]    direction=OUT    width=
+  debug_instr[3]    direction=OUT    width=
+  debug_instr[4]    direction=OUT    width=
+  debug_instr[5]    direction=OUT    width=
+  debug_instr[6]    direction=OUT    width=
+  debug_instr[7]    direction=OUT    width=
+  debug_instr[8]    direction=OUT    width=
+  debug_instr[9]    direction=OUT    width=
+  debug_mem_write    direction=OUT    width=
+  debug_pc[0]    direction=OUT    width=
+  debug_pc[10]    direction=OUT    width=
+  debug_pc[11]    direction=OUT    width=
+  debug_pc[12]    direction=OUT    width=
+  debug_pc[13]    direction=OUT    width=
+  debug_pc[14]    direction=OUT    width=
+  debug_pc[15]    direction=OUT    width=
+  debug_pc[16]    direction=OUT    width=
+  debug_pc[17]    direction=OUT    width=
+  debug_pc[18]    direction=OUT    width=
+  debug_pc[19]    direction=OUT    width=
+  debug_pc[1]    direction=OUT    width=
+  debug_pc[20]    direction=OUT    width=
+  debug_pc[21]    direction=OUT    width=
+  debug_pc[22]    direction=OUT    width=
+  debug_pc[23]    direction=OUT    width=
+  debug_pc[24]    direction=OUT    width=
+  debug_pc[25]    direction=OUT    width=
+  debug_pc[26]    direction=OUT    width=
+  debug_pc[27]    direction=OUT    width=
+  debug_pc[28]    direction=OUT    width=
+  debug_pc[29]    direction=OUT    width=
+  debug_pc[2]    direction=OUT    width=
+  debug_pc[30]    direction=OUT    width=
+  debug_pc[31]    direction=OUT    width=
+  debug_pc[3]    direction=OUT    width=
+  debug_pc[4]    direction=OUT    width=
+  debug_pc[5]    direction=OUT    width=
+  debug_pc[6]    direction=OUT    width=
+  debug_pc[7]    direction=OUT    width=
+  debug_pc[8]    direction=OUT    width=
+  debug_pc[9]    direction=OUT    width=
+  reset    direction=IN    width=
+
+Nets:
+----------------------------------------
+  <const0>
+  <const1>
+  alu_b[0]
+  alu_b[10]
+  alu_b[11]
+  alu_b[12]
+  alu_b[13]
+  alu_b[14]
+  alu_b[15]
+  alu_b[16]
+  alu_b[17]
+  alu_b[18]
+  alu_b[19]
+  alu_b[1]
+  alu_b[20]
+  alu_b[21]
+  alu_b[22]
+  alu_b[23]
+  alu_b[24]
+  alu_b[25]
+  alu_b[26]
+  alu_b[27]
+  alu_b[28]
+  alu_b[29]
+  alu_b[2]
+  alu_b[30]
+  alu_b[31]
+  alu_b[3]
+  alu_b[4]
+  alu_b[5]
+  alu_b[6]
+  alu_b[7]
+  alu_b[8]
+  alu_b[9]
+  alu_ctrl[0]
+  alu_ctrl[1]
+  alu_ctrl[2]
+  alu_src
+  branch
+  branch_taken
+  clk
+  debug_alu_result[0]
+  debug_alu_result[10]
+  debug_alu_result[11]
+  debug_alu_result[12]
+  debug_alu_result[13]
+  debug_alu_result[14]
+  debug_alu_result[15]
+  debug_alu_result[16]
+  debug_alu_result[17]
+  debug_alu_result[18]
+  debug_alu_result[19]
+  debug_alu_result[1]
+  debug_alu_result[20]
+  debug_alu_result[21]
+  debug_alu_result[22]
+  debug_alu_result[23]
+  debug_alu_result[24]
+  debug_alu_result[25]
+  debug_alu_result[26]
+  debug_alu_result[27]
+  debug_alu_result[28]
+  debug_alu_result[29]
+  debug_alu_result[2]
+  debug_alu_result[30]
+  debug_alu_result[31]
+  debug_alu_result[3]
+  debug_alu_result[4]
+  debug_alu_result[5]
+  debug_alu_result[6]
+  debug_alu_result[7]
+  debug_alu_result[8]
+  debug_alu_result[9]
+  debug_instr[0]
+  debug_instr[10]
+  debug_instr[11]
+  debug_instr[12]
+  debug_instr[13]
+  debug_instr[14]
+  debug_instr[15]
+  debug_instr[16]
+  debug_instr[17]
+  debug_instr[18]
+  debug_instr[19]
+  debug_instr[1]
+  debug_instr[20]
+  debug_instr[21]
+  debug_instr[22]
+  debug_instr[23]
+  debug_instr[24]
+  debug_instr[25]
+  debug_instr[26]
+  debug_instr[27]
+  debug_instr[28]
+  debug_instr[29]
+  debug_instr[2]
+  debug_instr[30]
+  debug_instr[31]
+  debug_instr[3]
+  debug_instr[4]
+  debug_instr[5]
+  debug_instr[6]
+  debug_instr[7]
+  debug_instr[8]
+  debug_instr[9]
+  debug_mem_write
+  debug_pc[0]
+  debug_pc[10]
+  debug_pc[11]
+  debug_pc[12]
+  debug_pc[13]
+  debug_pc[14]
+  debug_pc[15]
+  debug_pc[16]
+  debug_pc[17]
+  debug_pc[18]
+  debug_pc[19]
+  debug_pc[1]
+  debug_pc[20]
+  debug_pc[21]
+  debug_pc[22]
+  debug_pc[23]
+  debug_pc[24]
+  debug_pc[25]
+  debug_pc[26]
+  debug_pc[27]
+  debug_pc[28]
+  debug_pc[29]
+  debug_pc[2]
+  debug_pc[30]
+  debug_pc[31]
+  debug_pc[3]
+  debug_pc[4]
+  debug_pc[5]
+  debug_pc[6]
+  debug_pc[7]
+  debug_pc[8]
+  debug_pc[9]
+  imm_ext[0]
+  imm_ext[10]
+  imm_ext[11]
+  imm_ext[12]
+  imm_ext[13]
+  imm_ext[14]
+  imm_ext[15]
+  imm_ext[16]
+  imm_ext[17]
+  imm_ext[18]
+  imm_ext[19]
+  imm_ext[1]
+  imm_ext[20]
+  imm_ext[21]
+  imm_ext[22]
+  imm_ext[23]
+  imm_ext[24]
+  imm_ext[25]
+  imm_ext[26]
+  imm_ext[27]
+  imm_ext[28]
+  imm_ext[29]
+  imm_ext[2]
+  imm_ext[30]
+  imm_ext[31]
+  imm_ext[3]
+  imm_ext[4]
+  imm_ext[5]
+  imm_ext[6]
+  imm_ext[7]
+  imm_ext[8]
+  imm_ext[9]
+  mem_to_reg
+  pc_branch[0]
+  pc_branch[10]
+  pc_branch[11]
+  pc_branch[12]
+  pc_branch[13]
+  pc_branch[14]
+  pc_branch[15]
+  pc_branch[16]
+  pc_branch[17]
+  pc_branch[18]
+  pc_branch[19]
+  pc_branch[1]
+  pc_branch[20]
+  pc_branch[21]
+  pc_branch[22]
+  pc_branch[23]
+  pc_branch[24]
+  pc_branch[25]
+  pc_branch[26]
+  pc_branch[27]
+  pc_branch[28]
+  pc_branch[29]
+  pc_branch[2]
+  pc_branch[30]
+  pc_branch[31]
+  pc_branch[3]
+  pc_branch[4]
+  pc_branch[5]
+  pc_branch[6]
+  pc_branch[7]
+  pc_branch[8]
+  pc_branch[9]
+  pc_plus4[0]
+  pc_plus4[10]
+  pc_plus4[11]
+  pc_plus4[12]
+  pc_plus4[13]
+  pc_plus4[14]
+  pc_plus4[15]
+  pc_plus4[16]
+  pc_plus4[17]
+  pc_plus4[18]
+  pc_plus4[19]
+  pc_plus4[1]
+  pc_plus4[20]
+  pc_plus4[21]
+  pc_plus4[22]
+  pc_plus4[23]
+  pc_plus4[24]
+  pc_plus4[25]
+  pc_plus4[26]
+  pc_plus4[27]
+  pc_plus4[28]
+  pc_plus4[29]
+  pc_plus4[2]
+  pc_plus4[30]
+  pc_plus4[31]
+  pc_plus4[3]
+  pc_plus4[4]
+  pc_plus4[5]
+  pc_plus4[6]
+  pc_plus4[7]
+  pc_plus4[8]
+  pc_plus4[9]
+  pc_reg0[0]
+  pc_reg0[10]
+  pc_reg0[11]
+  pc_reg0[12]
+  pc_reg0[13]
+  pc_reg0[14]
+  pc_reg0[15]
+  pc_reg0[16]
+  pc_reg0[17]
+  pc_reg0[18]
+  pc_reg0[19]
+  pc_reg0[1]
+  pc_reg0[20]
+  pc_reg0[21]
+  pc_reg0[22]
+  pc_reg0[23]
+  pc_reg0[24]
+  pc_reg0[25]
+  pc_reg0[26]
+  pc_reg0[27]
+  pc_reg0[28]
+  pc_reg0[29]
+  pc_reg0[2]
+  pc_reg0[30]
+  pc_reg0[31]
+  pc_reg0[3]
+  pc_reg0[4]
+  pc_reg0[5]
+  pc_reg0[6]
+  pc_reg0[7]
+  pc_reg0[8]
+  pc_reg0[9]
+  rd1[0]
+  rd1[10]
+  rd1[11]
+  rd1[12]
+  rd1[13]
+  rd1[14]
+  rd1[15]
+  rd1[16]
+  rd1[17]
+  rd1[18]
+  rd1[19]
+  rd1[1]
+  rd1[20]
+  rd1[21]
+  rd1[22]
+  rd1[23]
+  rd1[24]
+  rd1[25]
+  rd1[26]
+  rd1[27]
+  rd1[28]
+  rd1[29]
+  rd1[2]
+  rd1[30]
+  rd1[31]
+  rd1[3]
+  rd1[4]
+  rd1[5]
+  rd1[6]
+  rd1[7]
+  rd1[8]
+  rd1[9]
+  rd2[0]
+  rd2[10]
+  rd2[11]
+  rd2[12]
+  rd2[13]
+  rd2[14]
+  rd2[15]
+  rd2[16]
+  rd2[17]
+  rd2[18]
+  rd2[19]
+  rd2[1]
+  rd2[20]
+  rd2[21]
+  rd2[22]
+  rd2[23]
+  rd2[24]
+  rd2[25]
+  rd2[26]
+  rd2[27]
+  rd2[28]
+  rd2[29]
+  rd2[2]
+  rd2[30]
+  rd2[31]
+  rd2[3]
+  rd2[4]
+  rd2[5]
+  rd2[6]
+  rd2[7]
+  rd2[8]
+  rd2[9]
+  read_data[0]
+  read_data[10]
+  read_data[11]
+  read_data[12]
+  read_data[13]
+  read_data[14]
+  read_data[15]
+  read_data[16]
+  read_data[17]
+  read_data[18]
+  read_data[19]
+  read_data[1]
+  read_data[20]
+  read_data[21]
+  read_data[22]
+  read_data[23]
+  read_data[24]
+  read_data[25]
+  read_data[26]
+  read_data[27]
+  read_data[28]
+  read_data[29]
+  read_data[2]
+  read_data[30]
+  read_data[31]
+  read_data[3]
+  read_data[4]
+  read_data[5]
+  read_data[6]
+  read_data[7]
+  read_data[8]
+  read_data[9]
+  reg_write
+  reset
+  result[0]
+  result[10]
+  result[11]
+  result[12]
+  result[13]
+  result[14]
+  result[15]
+  result[16]
+  result[17]
+  result[18]
+  result[19]
+  result[1]
+  result[20]
+  result[21]
+  result[22]
+  result[23]
+  result[24]
+  result[25]
+  result[26]
+  result[27]
+  result[28]
+  result[29]
+  result[2]
+  result[30]
+  result[31]
+  result[3]
+  result[4]
+  result[5]
+  result[6]
+  result[7]
+  result[8]
+  result[9]
+  zero

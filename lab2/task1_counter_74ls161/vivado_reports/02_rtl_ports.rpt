@@ -1,0 +1,52 @@
+========================================
+RTL Port Report for counter_74ls161
+========================================
+
+Current design:
+  rtl_1
+
+Ports:
+----------------------------------------
+  clk    direction=IN    width=
+  clr_n    direction=IN    width=
+  d[0]    direction=IN    width=
+  d[1]    direction=IN    width=
+  d[2]    direction=IN    width=
+  d[3]    direction=IN    width=
+  enp    direction=IN    width=
+  ent    direction=IN    width=
+  load_n    direction=IN    width=
+  q[0]    direction=OUT    width=
+  q[1]    direction=OUT    width=
+  q[2]    direction=OUT    width=
+  q[3]    direction=OUT    width=
+  rco    direction=OUT    width=
+
+Nets:
+----------------------------------------
+  <const1>
+  clk
+  clr_n
+  d[0]
+  d[1]
+  d[2]
+  d[3]
+  enp
+  ent
+  load_n
+  q0
+  q0_i_n_0
+  q0_i_n_1
+  q0_i_n_2
+  q0_i_n_3
+  q[0]
+  q[1]
+  q[2]
+  q[3]
+  q_i__0_n_0
+  q_i_n_0
+  q_i_n_1
+  q_i_n_2
+  q_i_n_3
+  rco
+  rco0

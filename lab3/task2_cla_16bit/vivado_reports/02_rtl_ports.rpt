@@ -1,0 +1,148 @@
+========================================
+RTL Port Report for cla_16bit
+========================================
+
+Current design:
+  rtl_1
+
+Ports:
+----------------------------------------
+  a[0]    direction=IN    width=
+  a[10]    direction=IN    width=
+  a[11]    direction=IN    width=
+  a[12]    direction=IN    width=
+  a[13]    direction=IN    width=
+  a[14]    direction=IN    width=
+  a[15]    direction=IN    width=
+  a[1]    direction=IN    width=
+  a[2]    direction=IN    width=
+  a[3]    direction=IN    width=
+  a[4]    direction=IN    width=
+  a[5]    direction=IN    width=
+  a[6]    direction=IN    width=
+  a[7]    direction=IN    width=
+  a[8]    direction=IN    width=
+  a[9]    direction=IN    width=
+  b[0]    direction=IN    width=
+  b[10]    direction=IN    width=
+  b[11]    direction=IN    width=
+  b[12]    direction=IN    width=
+  b[13]    direction=IN    width=
+  b[14]    direction=IN    width=
+  b[15]    direction=IN    width=
+  b[1]    direction=IN    width=
+  b[2]    direction=IN    width=
+  b[3]    direction=IN    width=
+  b[4]    direction=IN    width=
+  b[5]    direction=IN    width=
+  b[6]    direction=IN    width=
+  b[7]    direction=IN    width=
+  b[8]    direction=IN    width=
+  b[9]    direction=IN    width=
+  cin    direction=IN    width=
+  cout    direction=OUT    width=
+  gg    direction=OUT    width=
+  pg    direction=OUT    width=
+  sum[0]    direction=OUT    width=
+  sum[10]    direction=OUT    width=
+  sum[11]    direction=OUT    width=
+  sum[12]    direction=OUT    width=
+  sum[13]    direction=OUT    width=
+  sum[14]    direction=OUT    width=
+  sum[15]    direction=OUT    width=
+  sum[1]    direction=OUT    width=
+  sum[2]    direction=OUT    width=
+  sum[3]    direction=OUT    width=
+  sum[4]    direction=OUT    width=
+  sum[5]    direction=OUT    width=
+  sum[6]    direction=OUT    width=
+  sum[7]    direction=OUT    width=
+  sum[8]    direction=OUT    width=
+  sum[9]    direction=OUT    width=
+
+Nets:
+----------------------------------------
+  a[0]
+  a[10]
+  a[11]
+  a[12]
+  a[13]
+  a[14]
+  a[15]
+  a[1]
+  a[2]
+  a[3]
+  a[4]
+  a[5]
+  a[6]
+  a[7]
+  a[8]
+  a[9]
+  b[0]
+  b[10]
+  b[11]
+  b[12]
+  b[13]
+  b[14]
+  b[15]
+  b[1]
+  b[2]
+  b[3]
+  b[4]
+  b[5]
+  b[6]
+  b[7]
+  b[8]
+  b[9]
+  c12
+  c120
+  c120_i__0_n_0
+  c121
+  c121_i__0_n_0
+  c121_i__1_n_0
+  c122
+  c122_i__0_n_0
+  c160
+  c161
+  c4
+  c40
+  c8
+  c80
+  c80_i__0_n_0
+  c81
+  c81_i__0_n_0
+  cin
+  cout
+  g_0
+  g_1
+  g_2
+  g_3
+  gg
+  gg0
+  gg0_i__0_n_0
+  gg1
+  gg1_i__0_n_0
+  gg1_i__1_n_0
+  gg2
+  p_0
+  p_0_in
+  p_1
+  p_2
+  p_3
+  pg
+  sum[0]
+  sum[10]
+  sum[11]
+  sum[12]
+  sum[13]
+  sum[14]
+  sum[15]
+  sum[1]
+  sum[2]
+  sum[3]
+  sum[4]
+  sum[5]
+  sum[6]
+  sum[7]
+  sum[8]
+  sum[9]

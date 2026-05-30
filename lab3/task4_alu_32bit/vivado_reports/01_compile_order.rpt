@@ -1,0 +1,12 @@
+Source compile order for 'synthesis' with fileset 'sources_1' in source management mode 'All':
+Index  File Name     Used_In      File_Type  Library         Ngc Wrapper  Full Path Name
+-----  ------------  -----------  ---------  --------------  -----------  --------------------------------------------------------
+1      cla_adders.v  Synth & Sim  Verilog    xil_defaultlib  No           D:/Github/DDCA_Lab/lab3/task4_alu_32bit/src/cla_adders.v
+
+
+Missing instances for 'synthesis' with fileset 'sources_1':
+Index  Instance Path  File Path  Line
+-----  -------------  ---------  ----
+< empty >
+
+

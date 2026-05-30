@@ -1,0 +1,76 @@
+========================================
+RTL Port Report for cla_4bit
+========================================
+
+Current design:
+  rtl_1
+
+Ports:
+----------------------------------------
+  a[0]    direction=IN    width=
+  a[1]    direction=IN    width=
+  a[2]    direction=IN    width=
+  a[3]    direction=IN    width=
+  b[0]    direction=IN    width=
+  b[1]    direction=IN    width=
+  b[2]    direction=IN    width=
+  b[3]    direction=IN    width=
+  cin    direction=IN    width=
+  cout    direction=OUT    width=
+  gg    direction=OUT    width=
+  pg    direction=OUT    width=
+  sum[0]    direction=OUT    width=
+  sum[1]    direction=OUT    width=
+  sum[2]    direction=OUT    width=
+  sum[3]    direction=OUT    width=
+
+Nets:
+----------------------------------------
+  a[0]
+  a[1]
+  a[2]
+  a[3]
+  b[0]
+  b[1]
+  b[2]
+  b[3]
+  c10
+  c20
+  c20_i__0_n_0
+  c21
+  c21_i__0_n_0
+  c30
+  c30_i__0_n_0
+  c31
+  c31_i__0_n_0
+  c31_i__1_n_0
+  c32
+  c32_i__0_n_0
+  c40
+  c41
+  cin
+  cout
+  gg
+  gg0
+  gg0_i__0_n_0
+  gg1
+  gg1_i__0_n_0
+  gg1_i__1_n_0
+  gg2
+  gg2_i__0_n_0
+  p[0]
+  p[1]
+  p[2]
+  p[3]
+  p_0_in
+  p_1_in
+  p_2_in
+  p_4_in
+  p_6_out[1]
+  p_6_out[2]
+  p_6_out[3]
+  pg
+  sum[0]
+  sum[1]
+  sum[2]
+  sum[3]

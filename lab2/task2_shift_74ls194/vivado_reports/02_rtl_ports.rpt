@@ -1,0 +1,47 @@
+========================================
+RTL Port Report for shift_register_74ls194
+========================================
+
+Current design:
+  rtl_1
+
+Ports:
+----------------------------------------
+  clk    direction=IN    width=
+  clr_n    direction=IN    width=
+  d[0]    direction=IN    width=
+  d[1]    direction=IN    width=
+  d[2]    direction=IN    width=
+  d[3]    direction=IN    width=
+  q[0]    direction=OUT    width=
+  q[1]    direction=OUT    width=
+  q[2]    direction=OUT    width=
+  q[3]    direction=OUT    width=
+  s[0]    direction=IN    width=
+  s[1]    direction=IN    width=
+  sl    direction=IN    width=
+  sr    direction=IN    width=
+
+Nets:
+----------------------------------------
+  <const0>
+  <const1>
+  clk
+  clr_n
+  d[0]
+  d[1]
+  d[2]
+  d[3]
+  q0_out[0]
+  q0_out[1]
+  q0_out[2]
+  q0_out[3]
+  q[0]
+  q[1]
+  q[2]
+  q[3]
+  q_i__0_n_0
+  s[0]
+  s[1]
+  sl
+  sr
