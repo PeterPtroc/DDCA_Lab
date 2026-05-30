@@ -20,14 +20,14 @@
 
 ## ModelSim 仿真
 
-在任务目录下执行：
+在任务目录下执行普通自检仿真：
 
 ```bat
 cd sim
 vsim -c -do run.do
 ```
 
-脚本会自动重建 `work` 库，编译 `src/` 和 `sim/` 下的 Verilog/SystemVerilog 文件，运行 `tb_shift_register_74ls194`。testbench 为自检式，出现错误时会打印 `ERROR` 并以非零状态退出。
+脚本会自动重建 `work` 库，编译 `src/` 和 `sim/` 下的 Verilog/SystemVerilog 文件，运行当前 testbench。testbench 为自检式，出现错误时会打印 `ERROR` 并以非零状态退出。
 
 如果需要 GUI 波形：
 
@@ -35,6 +35,31 @@ vsim -c -do run.do
 cd sim
 vsim -do run.do
 ```
+
+批处理导出日志、WLF、VCD 和信号快照：
+
+```bat
+cd sim
+vsim -c -do export.do
+```
+
+导出结果位于 `sim_results/`：`sim.log`、`waveform.wlf`、`waveform.vcd`、`signals.csv`。
+
+重新打开原生波形数据库：
+
+```bat
+cd sim
+vsim -view sim_results\waveform.wlf -do wave.do
+```
+
+导出报告用静态波形图：
+
+```bat
+cd sim
+vsim -do export_wave_image.do
+```
+
+`export_wave_image.do` 会优先尝试生成 `wave_snapshot.png`；若系统没有 ImageMagick/Ghostscript 转换工具，则至少生成 ModelSim 原生支持的 `wave_snapshot.ps`，也可在 GUI 中通过 `File > Export > Image` 手动导出 PNG/BMP。
 
 ## Vivado 工程、报告和原理图
 

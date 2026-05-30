@@ -18,6 +18,7 @@ transcript
 *.wlf
 modelsim.ini
 work/
+sim_results/
 vivado*.jou
 vivado*.log
 vivado*.str

@@ -68,12 +68,35 @@ Vivado 默认器件型号为 `xc7a35tcpg236-1`，可以在生成任务时通过 
 
 进入任一任务目录后，可以直接运行仿真或 Vivado 流程。下面以 Lab 4 单周期 CPU 为例：
 
-查看modelsim仿真波形：
+查看 ModelSim/QuestaSim GUI 波形：
 
 ```bat
 cd lab4\task1_single_cycle_cpu\sim
 vsim -do run.do
 ```
+
+批处理导出仿真日志、WLF、VCD 和信号快照：
+
+```bat
+cd lab4\task1_single_cycle_cpu\sim
+vsim -c -do export.do
+```
+
+导出结果位于 `sim_results/`，包括 `sim.log`、`waveform.wlf`、`waveform.vcd` 和 `signals.csv`。重新打开波形数据库：
+
+```bat
+cd lab4\task1_single_cycle_cpu\sim
+vsim -view sim_results\waveform.wlf -do wave.do
+```
+
+导出报告用静态波形图：
+
+```bat
+cd lab4\task1_single_cycle_cpu\sim
+vsim -do export_wave_image.do
+```
+
+`export_wave_image.do` 会优先尝试生成 `wave_snapshot.png`；若系统没有 ImageMagick/Ghostscript 转换工具，则至少生成 ModelSim 原生支持的 `wave_snapshot.ps`，也可在 GUI 中通过 `File > Export > Image` 手动导出 PNG/BMP。
 
 运行 Vivado 自动化流程：
 
@@ -149,4 +172,3 @@ python create_task.py lab3_alu_32bit --device xc7a35tcpg236-1
 - `sim/`: testbench 和仿真辅助脚本。
 
 生成任务时，脚本会复制 `common/task_template`，再把 preset 中的文件合并到目标任务目录，并替换 README、ModelSim 脚本和 Vivado 脚本中的占位符。
-
