@@ -17,6 +17,10 @@
 - `vivado_reports/`: RTL/综合报告，脚本生成
 - `vivado_schematic/`: RTL 原理图导出结果，脚本生成
 
+## 脚手架来源
+
+本任务由仓库根目录 `create_task.py` 和 `common/task_template` 生成。根目录直接执行 `python create_task.py` 会进入交互式创建；执行 `python create_task.py --list-presets` 可查看可复用 preset；执行 `python create_task.py <preset>` 可按 preset 复现课程任务。
+
 ## ModelSim 仿真
 
 在任务目录下执行：

@@ -1,0 +1,10 @@
+{
+  "lab_dir": "lab1",
+  "task_dir": "task1",
+  "title": "任务1：3-8 译码器 74LS138",
+  "requirement": "用 Verilog HDL 实现 3-8 译码器芯片 74LS138，并进行仿真测试。",
+  "top_module": "decoder_74ls138",
+  "sim_top": "tb_decoder_74ls138",
+  "wave_signals": "\nadd wave -divider \"Enable Signals\"\nadd wave -radix binary /{{SIM_TOP}}/G1\nadd wave -radix binary /{{SIM_TOP}}/G2A_n\nadd wave -radix binary /{{SIM_TOP}}/G2B_n\nadd wave -divider \"Address Inputs\"\nadd wave -radix unsigned /{{SIM_TOP}}/addr\nadd wave -radix binary /{{SIM_TOP}}/C\nadd wave -radix binary /{{SIM_TOP}}/B\nadd wave -radix binary /{{SIM_TOP}}/A\nadd wave -divider \"Decoder Outputs\"\nadd wave -radix binary /{{SIM_TOP}}/Y_n\nadd wave -divider \"Expected and Error Count\"\nadd wave -radix binary /{{SIM_TOP}}/expected\nadd wave -radix unsigned /{{SIM_TOP}}/error_count\n",
+  "extra_notes": ""
+}

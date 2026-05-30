@@ -1,0 +1,10 @@
+{
+  "lab_dir": "lab1",
+  "task_dir": "task3",
+  "title": "任务3：1 位全加器与 4 位串行进位加法器",
+  "requirement": "用 Verilog HDL 实现 1 位全加器和 4 位串行进位加法器，并进行仿真测试。",
+  "top_module": "adder_4bit",
+  "sim_top": "tb_adder_4bit",
+  "wave_signals": "\nadd wave -divider \"Inputs\"\nadd wave -radix hexadecimal /{{SIM_TOP}}/a\nadd wave -radix hexadecimal /{{SIM_TOP}}/b\nadd wave -radix binary /{{SIM_TOP}}/cin\nadd wave -divider \"Outputs\"\nadd wave -radix hexadecimal /{{SIM_TOP}}/sum\nadd wave -radix binary /{{SIM_TOP}}/cout\nadd wave -radix hexadecimal /{{SIM_TOP}}/expected\nadd wave -radix unsigned /{{SIM_TOP}}/error_count\n",
+  "extra_notes": ""
+}

@@ -1,0 +1,10 @@
+{
+  "lab_dir": "lab1",
+  "task_dir": "task2",
+  "title": "任务2：8-3 优先编码器 74LS148",
+  "requirement": "用 Verilog HDL 实现 8-3 优先编码器芯片 74LS148，并进行仿真测试。",
+  "top_module": "encoder_74ls148",
+  "sim_top": "tb_encoder_74ls148",
+  "wave_signals": "\nadd wave -divider \"Control\"\nadd wave -radix binary /{{SIM_TOP}}/EI_n\nadd wave -divider \"Inputs\"\nadd wave -radix binary /{{SIM_TOP}}/I_n\nadd wave -divider \"Outputs\"\nadd wave -radix binary /{{SIM_TOP}}/A_n\nadd wave -radix binary /{{SIM_TOP}}/GS_n\nadd wave -radix binary /{{SIM_TOP}}/EO_n\nadd wave -radix unsigned /{{SIM_TOP}}/error_count\n",
+  "extra_notes": ""
+}

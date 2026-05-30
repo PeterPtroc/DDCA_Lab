@@ -1,0 +1,10 @@
+{
+  "lab_dir": "lab1",
+  "task_dir": "task4",
+  "title": "任务4：1 位 ALU 电路",
+  "requirement": "用 Verilog HDL 实现 1 位 ALU 电路，并进行仿真测试。",
+  "top_module": "alu_1bit",
+  "sim_top": "tb_alu_1bit",
+  "wave_signals": "\nadd wave -divider \"Inputs\"\nadd wave -radix binary /{{SIM_TOP}}/A\nadd wave -radix binary /{{SIM_TOP}}/B\nadd wave -radix binary /{{SIM_TOP}}/S\nadd wave -divider \"Outputs\"\nadd wave -radix binary /{{SIM_TOP}}/F\nadd wave -radix binary /{{SIM_TOP}}/Cout\nadd wave -radix binary /{{SIM_TOP}}/expected_f\nadd wave -radix binary /{{SIM_TOP}}/expected_cout\nadd wave -radix unsigned /{{SIM_TOP}}/error_count\n",
+  "extra_notes": ""
+}
