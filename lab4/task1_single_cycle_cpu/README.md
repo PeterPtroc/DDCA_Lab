@@ -2,7 +2,7 @@
 
 ## 实验要求
 
-利用 ALU、寄存器堆、取指令部件、控制器等电路实现支持 add、sub、or、slt、sltu、lw、sw、beq、lui 的单周期 CPU，并用累加和程序和冒泡排序程序验证。
+利用 ALU、寄存器堆、取指令部件、控制器等电路实现至少支持 add、slt、sltu、ori、lui、lw、sw、beq、jal 的单周期 CPU；当前实现同时保留 sub 和 R 型 or，并用累加和程序、冒泡排序程序及九条指令覆盖测试验证。
 
 ## 文件说明
 
@@ -89,4 +89,4 @@ vivado -mode gui -source export_rtl_schematic.tcl
 - `vivado_reports/06_post_synth_drc.rpt`: 综合后 DRC
 - `vivado_schematic/rtl_schematic_full.svg`: 可插入实验报告的 RTL 原理图
 
-仿真程序镜像位于 `sim/*.mem`，testbench 会分别加载累加和与冒泡排序程序并检查最终数据存储器内容。
+仿真程序镜像位于 `sim/*.mem`，testbench 会分别加载累加和与冒泡排序程序并检查最终数据存储器内容，随后运行一段内置小程序覆盖 add、slt、sltu、ori、lui、lw、sw、beq、jal。

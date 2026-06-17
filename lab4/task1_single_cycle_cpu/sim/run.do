@@ -83,5 +83,5 @@ puts "Top module: $top_module"
 puts "Simulation top: $sim_top"
 puts "========================================"
 
-quit -code 0
+# quit -code 0
 

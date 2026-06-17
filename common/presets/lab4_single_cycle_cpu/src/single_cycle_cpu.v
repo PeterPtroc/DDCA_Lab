@@ -26,22 +26,25 @@ module single_cycle_cpu (
     wire mem_to_reg;
     wire alu_src;
     wire branch;
+    wire jump;
     wire zero;
     wire branch_taken;
+    wire pc_redirect;
     reg [31:0] pc_reg;
 
     assign pc = pc_reg;
     assign pc_plus4 = pc + 32'd4;
     assign pc_branch = pc + imm_ext;
     assign branch_taken = branch & zero;
+    assign pc_redirect = branch_taken | jump;
     assign alu_b = alu_src ? imm_ext : rd2;
-    assign result = mem_to_reg ? read_data : alu_result;
+    assign result = jump ? pc_plus4 : (mem_to_reg ? read_data : alu_result);
 
     always @(posedge clk or posedge reset) begin
         if (reset) begin
             pc_reg <= 32'b0;
         end else begin
-            pc_reg <= branch_taken ? pc_branch : pc_plus4;
+            pc_reg <= pc_redirect ? pc_branch : pc_plus4;
         end
     end
 
@@ -75,6 +78,7 @@ module single_cycle_cpu (
         .mem_to_reg(mem_to_reg),
         .alu_src(alu_src),
         .branch(branch),
+        .jump(jump),
         .alu_ctrl(alu_ctrl)
     );
 
@@ -191,9 +195,11 @@ module imm_extend (
     always @(*) begin
         case (instr[6:0])
             7'b0000011: imm_ext = {{20{instr[31]}}, instr[31:20]};
+            7'b0010011: imm_ext = {{20{instr[31]}}, instr[31:20]};
             7'b0100011: imm_ext = {{20{instr[31]}}, instr[31:25], instr[11:7]};
             7'b1100011: imm_ext = {{19{instr[31]}}, instr[31], instr[7], instr[30:25], instr[11:8], 1'b0};
             7'b0110111: imm_ext = {instr[31:12], 12'b0};
+            7'b1101111: imm_ext = {{11{instr[31]}}, instr[31], instr[19:12], instr[20], instr[30:21], 1'b0};
             default:    imm_ext = 32'b0;
         endcase
     end
@@ -209,6 +215,7 @@ module control_unit (
     output reg        mem_to_reg,
     output reg        alu_src,
     output reg        branch,
+    output reg        jump,
     output reg  [2:0] alu_ctrl
 );
 
@@ -225,6 +232,7 @@ module control_unit (
         mem_to_reg = 1'b0;
         alu_src = 1'b0;
         branch = 1'b0;
+        jump = 1'b0;
         alu_ctrl = ALU_ADD;
 
         case (opcode)
@@ -235,6 +243,17 @@ module control_unit (
                     3'b110: alu_ctrl = ALU_OR;
                     3'b010: alu_ctrl = ALU_SLT;
                     3'b011: alu_ctrl = ALU_SLTU;
+                    default: begin
+                        reg_write = 1'b0;
+                        alu_ctrl = ALU_ADD;
+                    end
+                endcase
+            end
+            7'b0010011: begin
+                reg_write = 1'b1;
+                alu_src = 1'b1;
+                case (funct3)
+                    3'b110: alu_ctrl = ALU_OR;
                     default: begin
                         reg_write = 1'b0;
                         alu_ctrl = ALU_ADD;
@@ -253,7 +272,7 @@ module control_unit (
                 alu_ctrl = ALU_ADD;
             end
             7'b1100011: begin
-                branch = 1'b1;
+                branch = (funct3 == 3'b000);
                 alu_ctrl = ALU_SUB;
             end
             7'b0110111: begin
@@ -261,12 +280,17 @@ module control_unit (
                 alu_src = 1'b1;
                 alu_ctrl = ALU_SRCB;
             end
+            7'b1101111: begin
+                reg_write = 1'b1;
+                jump = 1'b1;
+            end
             default: begin
                 reg_write = 1'b0;
                 mem_write = 1'b0;
                 mem_to_reg = 1'b0;
                 alu_src = 1'b0;
                 branch = 1'b0;
+                jump = 1'b0;
                 alu_ctrl = ALU_ADD;
             end
         endcase
